@@ -1,38 +1,119 @@
-.App {
+/* RecipeApp.css */
+.recipe-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.recipe-card {
+  border: 1px solid #ccc;
+  padding: 10px;
+  margin-bottom: 20px;
+  box-sizing: border-box;
+}
+
+.recipe-image {
+  width: 100%;
+  height: auto;
+}
+
+.recipe-title {
+  font-size: 18px;
+  margin: 5px 0;
+}
+
+.recipe-details {
+  font-size: 14px;
+}
+
+.search-container {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.search-bar {
+  flex: 1;
+  margin-right: 10px;
+  outline: none!important;
+}
+
+.search-button {
+  height: 100%;
+}
+
+/* RecipeCard.css */
+.recipe-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-top: 10px;
+}
+
+.recipe-card {
+  border: 1px solid #ccc;
+  padding: 0px;
+  margin: 10px;
+  border-radius: 10px;
+  box-sizing: border-box;
+  background-color: #fff;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s ease-in-out;
+}
+
+.recipe-card:hover {
+  transform: translateY(-5px);
+}
+
+.recipe-image {
+  width: 100%;
+  height: 150px;
+  border-radius: 4px;
+}
+
+.recipe-title {
+  font-size: 13px;
+  margin: 5px 0;
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.recipe-details {
+  font-size: 14px;
+  margin: 5px 0;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.p-140{
+  padding: 20px 140px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.t-a-center{
+  text-align: center;
+}
+
+
+.search-btn{
+  position: absolute;
+  right: 5px;
+  cursor: pointer;
+  /* top: 40%; */
+
+}
+
+.p-relative{
+  position: relative;
+}
+
+.w-fit-content{
+  width: fit-content!important;
+}
+
+.d-flex{
   display: flex;
-  flex-direction: column;
+}
+.align-center{
   align-items: center;
+}
+
+.j-center{
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
 }
